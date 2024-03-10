@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([]);
+
   const handleAddToCart = (course) => {
     const newSelectedCourse = [...selectedCourses, course];
     setSelectedCourses(newSelectedCourse);
@@ -14,7 +15,10 @@ function App() {
     <div className="bg-slate-200 p-10">
       <Header></Header>
       <div className="flex">
-        <Courses handleAddToCart={handleAddToCart}></Courses>
+        <Courses
+          handleAddToCart={handleAddToCart}
+          selectedCourses={selectedCourses}
+        ></Courses>
         <Cart selectedCourses={selectedCourses}></Cart>
       </div>
     </div>

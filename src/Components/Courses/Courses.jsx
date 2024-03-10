@@ -3,7 +3,7 @@ import { useState } from "react";
 import Course from "../Course/Course";
 import PropTypes from "prop-types"; // ES6
 
-const Courses = ({ handleAddToCart }) => {
+const Courses = ({ handleAddToCart, selectedCourses }) => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     fetch("data.json")
@@ -17,6 +17,7 @@ const Courses = ({ handleAddToCart }) => {
           key={course._id}
           course={course}
           handleAddToCart={handleAddToCart}
+          selectedCourses={selectedCourses}
         ></Course>
       ))}
     </div>
@@ -24,5 +25,6 @@ const Courses = ({ handleAddToCart }) => {
 };
 Courses.propTypes = {
   handleAddToCart: PropTypes.func,
+  selectedCourses: PropTypes.array,
 };
 export default Courses;
