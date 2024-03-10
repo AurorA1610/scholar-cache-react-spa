@@ -2,11 +2,11 @@ import PropTypes from "prop-types"; // ES6
 import { LuDollarSign } from "react-icons/lu";
 import { IoBookOutline } from "react-icons/io5";
 
-const Course = ({ course }) => {
+const Course = ({ course, handleAddToCart }) => {
   const { img, name, details, credit, price } = course;
   return (
-    <div className="p-4 bg-white border-2 border-transparent rounded-lg transition duration-0 hover:border-cyan-300">
-      <img src={img} alt="" className="w-full h-72 rounded-lg" />
+    <div className="p-4 bg-white border-2 border-transparent rounded-2xl transition duration-0 hover:border-cyan-300">
+      <img src={img} alt="" className="w-full h-72 rounded-xl" />
       <h1 className="text-xl my-5 font-semibold">{name}</h1>
       <p className="text-base text-slate-700 font-normal">{details}</p>
       <div className="flex justify-between my-5">
@@ -19,13 +19,19 @@ const Course = ({ course }) => {
           <span className="ms-6">Credit : {credit}hr</span>
         </div>
       </div>
-      <button className="w-full bg-cyan-400 text-white text-center text-lg font-semibold px-3 py-1 rounded-lg hover:shadow-lg hover:shadow-cyan-700	 active:bg-cyan-200 cursor-pointer border-none transition duration-300 active:text-black active:transition-none">
+      <button
+        className="w-full bg-cyan-400 text-white text-center text-lg font-semibold px-3 py-1 rounded-xl hover:shadow-lg hover:shadow-cyan-700	 active:bg-cyan-200 cursor-pointer border-none transition duration-300 active:text-black active:transition-none"
+        onClick={() => {
+          handleAddToCart(course);
+        }}
+      >
         Select
       </button>
     </div>
   );
 };
 Course.propTypes = {
-  course: PropTypes.object,
+  course: PropTypes.object.isRequired,
+  handleAddToCart: PropTypes.func,
 };
 export default Course;
