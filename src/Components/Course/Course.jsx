@@ -3,6 +3,7 @@ import { LuDollarSign } from "react-icons/lu";
 import { IoBookOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { SlLike } from "react-icons/sl";
+import { PiWarningCircle } from "react-icons/pi";
 
 const Course = ({
   course,
@@ -27,7 +28,7 @@ const Course = ({
       <img src={img} alt="" className="w-full h-72 rounded-xl" />
       <h1 className="text-xl my-5 font-semibold">{name}</h1>
       <p className="text-base text-gray-500 font-normal">{details}</p>
-      <div className="flex justify-between my-5">
+      <div className="md:flex justify-between my-5">
         <div className="flex items-center text-lg font-medium">
           <LuDollarSign />
           <span className="ms-6">Price : {price}</span>
@@ -54,11 +55,9 @@ const Course = ({
                     ✕
                   </button>
                 </form>
-                <p className="py-4 text-center flex items-center justify-center">
-                  <SlLike />
-                  <span className="ms-6">
-                    This course is already in your cart.
-                  </span>
+                <p className="py-4 flex items-center justify-center">
+                  <SlLike className="text-5xl me-6 text-green-600" />
+                  <span>This course is already in your cart.</span>
                 </p>
               </div>
             </dialog>
@@ -89,11 +88,9 @@ const Course = ({
                   ✕
                 </button>
               </form>
-              <p className="py-4 text-center flex items-center justify-center">
-                <SlLike />
-                <span className="ms-6">
-                  Total credit should not exceed 20 hours.
-                </span>
+              <p className="py-4 flex items-center justify-center">
+                <PiWarningCircle className="text-5xl me-6 text-yellow-600" />
+                <span>Total credit should not exceed 20 hours.</span>
               </p>
             </div>
           </dialog>

@@ -21,20 +21,20 @@ function App() {
   );
   const remainingCredit = 20 - totalCredit;
   return (
-    <div className="bg-slate-200 p-10">
+    <div className="bg-gray-200 p-10">
       <Header></Header>
-      <div className="flex">
-        <Courses
-          handleAddToCart={handleAddToCart}
-          selectedCourses={selectedCourses}
-          remainingCredit={remainingCredit}
-        ></Courses>
+      <div className="lg:flex lg:flex-row-reverse">
         <Cart
           selectedCourses={selectedCourses}
           totalCredit={totalCredit}
           totalPrice={totalPrice}
           remainingCredit={remainingCredit}
         ></Cart>
+        <Courses
+          handleAddToCart={handleAddToCart}
+          selectedCourses={selectedCourses}
+          remainingCredit={remainingCredit}
+        ></Courses>
       </div>
     </div>
   );

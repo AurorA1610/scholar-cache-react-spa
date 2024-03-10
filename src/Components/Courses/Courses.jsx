@@ -11,7 +11,7 @@ const Courses = ({ handleAddToCart, selectedCourses, remainingCredit }) => {
       .then((data) => setCourses(data));
   }, []);
   return (
-    <div className="mt-10 grid grid-cols-3 gap-5 w-3/4">
+    <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 lg:w-3/4">
       {courses.map((course) => (
         <Course
           key={course._id}
