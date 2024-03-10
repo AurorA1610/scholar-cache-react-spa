@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "3",
+    "img": "/images/ml.jpg",
+    "name": "Machine Learning Fundamentals",
+    "details": "Dive into the basics of machine learning and its applications.",
+    "credit": 5,
+    "price": 100.0
+  },
+  {
+    "_id": "2",
+    "img": "/images/algo2.png",
+    "name": "Algorithmic Foundations",
+    "details": "Delve into the essential principles of algorithms and algorithmic problem-solving.",
+    "credit": 5,
+    "price": 100.0
+  },
+  {
+    "_id": "1",
+    "img": "/images/algo.jpg",
+    "name": "Introduction to Algorithms",
+    "details": "Explore the fundamentals of algorithm design and analysis.",
+    "credit": 3,
+    "price": 50.0
+  },
+  {
+    "_id": "5",
+    "img": "/images/cs.jpg",
+    "name": "Cybersecurity Essentials",
+    "details": "Gain a comprehensive understanding of the essential principles underlying cybersecurity practices.",
+    "credit": 4,
+    "price": 70.0
+  },
+  {
+    "_id": "4",
+    "img": "/images/db.jpg",
+    "name": "Database Design and Management",
+    "details": "Learn to design and manage efficient and scalable databases.",
+    "credit": 3,
+    "price": 60.0
+  },
+  {
+    "_id": "7",
+    "img": "/images/ds.jpg",
+    "name": "Data Science for Beginners",
+    "details": "Introduction to data science and basic data analysis techniques.",
+    "credit": 3,
+    "price": 50.0
+  },
+  {
+    "_id": "18",
+    "img": "/images/ps.png",
+    "name": "Problem-Solving Part",
+    "details": "Sharpen your problem-solving skills with practical exercises and challenges.",
+    "credit": 2,
+    "price": 230.0
+  },
+  {
+    "_id": "16",
+    "img": "/images/aws.png",
+    "name": "AWS, Cloud Computing",
+    "details": "Explore the world of cloud computing with a focus on AWS services.",
+    "credit": 5,
+    "price": 350.0
+  },
+  {
+    "_id": "14",
+    "img": "/images/python.png",
+    "name": "Introduction to OOP Python",
+    "details": "Get started with object-oriented programming using Python.",
+    "credit": 5,
+    "price": 190.0
+  },
+  {
+    "_id": "8",
+    "img": "/images/cc.jpg",
+    "name": "Cloud Computing Basics",
+    "details": "Explore the fundamentals of cloud computing and services.",
+    "credit": 4,
+    "price": 80.0
+  },
+  {
+    "_id": "11",
+    "img": "/images/web.jpg",
+    "name": "Web Development Bootcamp",
+    "details": "Build modern and responsive web applications from scratch.",
+    "credit": 4,
+    "price": 80.0
+  },
+  {
+    "_id": "12",
+    "img": "/images/cplusplus.png",
+    "name": "Introduction to C++ for DSA",
+    "details": "Explore the power of C++ for data structures and algorithms applications.",
+    "credit": 10,
+    "price": 100.0
+  },
+  {
+    "_id": "17",
+    "img": "/images/mysql.png",
+    "name": "Database (MySQL)",
+    "details": "Discover the essentials of MySQL for effective database management.",
+    "credit": 5,
+    "price": 190.0
+  },
+  {
+    "_id": "6",
+    "img": "/images/swe.jpg",
+    "name": "Software Engineering Principles",
+    "details": "Master the principles and best practices of software engineering.",
+    "credit": 5,
+    "price": 90.0
+  },
+  {
+    "_id": "15",
+    "img": "/images/swe2.png",
+    "name": "Modern Software Engineering",
+    "details": "Gain insights into the principles and practices of modern software engineering.",
+    "credit": 2,
+    "price": 230.0
+  },
+  {
+    "_id": "13",
+    "img": "/images/dstruct.png",
+    "name": "Basic Data Structures",
+    "details": "Build a strong foundation in fundamental data structures and their applications.",
+    "credit": 5,
+    "price": 350.0
+  },
+  {
+    "_id": "9",
+    "img": "/images/rn.jpg",
+    "name": "Mobile App Development with React Native",
+    "details": "Build cross-platform mobile applications using React Native.",
+    "credit": 5,
+    "price": 100.0
+  },
+  {
+    "_id": "10",
+    "img": "images/c.png",
+    "name": "Introduction to C Programming",
+    "details": "Master the fundamentals of C programming for building versatile applications.",
+    "credit": 1,
+    "price": 150.0
+  }
+]
