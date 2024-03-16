@@ -11,6 +11,12 @@ function App() {
     const newSelectedCourse = [...selectedCourses, course];
     setSelectedCourses(newSelectedCourse);
   };
+  const handleRemoveFromCart = (id) => {
+    const remainingSelectedCourses = selectedCourses.filter(
+      (course) => course._id !== id
+    );
+    setSelectedCourses(remainingSelectedCourses);
+  };
   const { totalCredit, totalPrice } = selectedCourses.reduce(
     (acc, course) => {
       acc.totalCredit += course.credit;
@@ -29,6 +35,7 @@ function App() {
           totalCredit={totalCredit}
           totalPrice={totalPrice}
           remainingCredit={remainingCredit}
+          handleRemoveFromCart={handleRemoveFromCart}
         ></Cart>
         <Courses
           handleAddToCart={handleAddToCart}
