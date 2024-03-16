@@ -4,6 +4,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { SlLike } from "react-icons/sl";
 import { PiWarningCircle } from "react-icons/pi";
+import "animate.css";
 
 const Course = ({
   course,
@@ -24,7 +25,7 @@ const Course = ({
     }
   }, [selectedCoursesIds, remainingCredit]);
   return (
-    <div className="p-4 bg-white border-2 border-transparent rounded-2xl transition duration-0 hover:border-cyan-300">
+    <div className="animating-comp animate__animated animate__fadeInUp p-4 bg-white border-2 border-transparent rounded-2xl transition duration-0 hover:border-cyan-300">
       <img src={img} alt="" className="w-full h-72 rounded-xl" />
       <h1 className="text-xl my-5 font-semibold">{name}</h1>
       <p className="text-base text-gray-500 font-normal">{details}</p>

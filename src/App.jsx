@@ -3,6 +3,7 @@ import "./App.css";
 import Cart from "./Components/Cart/Cart";
 import Courses from "./Components/Courses/Courses";
 import Header from "./Components/Header/Header";
+import "animate.css";
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([]);
@@ -27,7 +28,7 @@ function App() {
   );
   const remainingCredit = 20 - totalCredit;
   return (
-    <div className="bg-gray-200 p-10">
+    <div className="animating-app bg-gray-200 p-10 animate__animated animate__fadeIn">
       <Header></Header>
       <div className="lg:flex lg:flex-row-reverse">
         <Cart

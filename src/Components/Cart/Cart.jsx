@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"; // ES6
 import { ImCross } from "react-icons/im";
+import "animate.css";
 
 const Cart = ({
   selectedCourses,
@@ -10,7 +11,7 @@ const Cart = ({
 }) => {
   return (
     <div className="md:flex justify-center items-center lg:w-1/5  mt-10 lg:ms-5  h-max lg:sticky top-6">
-      <div className="md:w-max bg-white p-5 rounded-2xl">
+      <div className="md:w-max bg-white p-5 rounded-2xl animating-comp animate__animated animate__fadeInRight">
         <h4 className="text-xl font-bold text-cyan-400 py-4 border-b-2">
           Remaining Credit {remainingCredit} hr
         </h4>

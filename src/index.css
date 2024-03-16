@@ -7,3 +7,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
+.animating-app {
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.animating-comp {
+  animation-duration: 2.6s; /* don't forget to set a duration! */
+}
