@@ -1,5 +1,4 @@
 import PropTypes from "prop-types"; // ES6
-import { ImCross } from "react-icons/im";
 import "animate.css";
 
 const Cart = ({
@@ -7,7 +6,6 @@ const Cart = ({
   totalCredit,
   totalPrice,
   remainingCredit,
-  handleRemoveFromCart,
 }) => {
   return (
     <div className="md:flex justify-center items-center lg:w-1/5  mt-10 lg:ms-5  h-max lg:sticky top-6">
@@ -24,14 +22,6 @@ const Cart = ({
             <h1 className="text-lg	font-normal text-gray-500">
               {selectedCourse.name}
             </h1>
-            <button
-              className="text-red-400 ms-3"
-              onClick={() => {
-                handleRemoveFromCart(selectedCourse._id);
-              }}
-            >
-              <ImCross />
-            </button>
           </div>
         ))}
         <h3 className="text-lg	font-medium py-4 border-y-2 mt-6 mb-4">
@@ -47,6 +37,5 @@ Cart.propTypes = {
   totalCredit: PropTypes.number,
   totalPrice: PropTypes.number,
   remainingCredit: PropTypes.number,
-  handleRemoveFromCart: PropTypes.func,
 };
 export default Cart;
